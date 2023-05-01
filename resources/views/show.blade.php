@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+<title>{{$tareas->title}}</title>
     <div class="container-fluid border p-4 mt-4 bg-dark">
         <form action="{{ route('Tareas-update', ['id' => $tareas->id]) }}" method="POST">
             @method ('PATCH')

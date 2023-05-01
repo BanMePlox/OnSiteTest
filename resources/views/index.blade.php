@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+<title>Index</title>
     <div class="container-fluid border p-4 mt-4 bg-dark text-white">
         <form action="{{ route('tareas-create')}}" method="POST">
             @csrf
@@ -11,7 +12,7 @@
                 <h6 class="alert alert-danger">{{ $message }}</h6>
             @enderror
             <div class="mb-3">
-                <label for="title" class="form-label">TITULO</label>
+                <label for="title" class="form-label">TITULO DE TAREA</label>
                 <input type="text" name="title" class="form-control">
                 <label for="estado" class="form-label">Completada?</label>
                 <input type="checkbox" name="estado" class="switch-input" value="1"

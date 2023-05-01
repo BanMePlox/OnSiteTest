@@ -13,7 +13,6 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <title>Hello, world!</title>
 
 
     <nav class="navbar navbar-dark bg-dark border border-warning">

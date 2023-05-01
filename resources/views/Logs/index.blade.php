@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-
+<title>Logs</title>
 <div class="container">
     <table class="table">
         <thead>
