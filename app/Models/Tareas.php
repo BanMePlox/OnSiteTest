@@ -21,6 +21,15 @@ class Tareas extends Model
     }
 
     public function subtasks() {
-        return $this->hasMany(SubTask::class);
+        return $this->hasMany(SubTask::class, 'task_id');
     }
+
+    protected static function boot()
+{
+    parent::boot();
+
+    static::deleting(function ($tarea) {
+        $tarea->subtasks()->delete();
+    });
+}
 }
